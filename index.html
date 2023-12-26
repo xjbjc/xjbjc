@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>XJBJC路标站</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e4f5fc; /* 浅蓝色背景 */
+            background-image: url('https://xjbjc.github.io/xjbjc/background1.png'); /* 背景图片 */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.8); /* 半透明背景 */
+            border-radius: 10px; /* 圆角边框 */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script type="text/javascript">
+        var delay = 30000; // 30秒
+
+        function redirectToSite() {
+            window.location.href = 'https://1.ssw1.net';
+        }
+
+        window.onload = function() {
+            setTimeout(redirectToSite, delay);
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>即将跳转到XJBJC的最新域名</h1>
+        <p>浏览器将在 <span id="countdown">30</span> 秒后将您重定向到我们的最新域名 <a href="https://1.xjbjc.top">1.xjbjc.top</a>。</p>
+        <p>如果您的浏览器没有自动跳转，请<a href="https://1.xjbjc.top">点击此处</a>手动跳转。</p>
+        <p>我们的永久域名 <a href="https://1.xjbjc.xyz">xjbjc.xyz</a></p>
+        <p>建议将本页面添加到浏览器收藏夹防止迷路</p>
+    </div>
+    <script>
+        var countdownElement = document.getElementById('countdown');
+        var countdownTime = 30;
+        var interval = setInterval(function() {
+            countdownTime--;
+            countdownElement.innerText = countdownTime;
+            if (countdownTime <= 0) clearInterval(interval);
+        }, 1000);
+    </script>
+</body>
+</html>
